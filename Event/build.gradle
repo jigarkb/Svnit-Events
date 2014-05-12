@@ -1,0 +1,55 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.9.+'
+    }
+}
+apply plugin: 'android'
+
+repositories {
+    mavenCentral()
+}
+
+android {
+    compileSdkVersion 18
+    buildToolsVersion '19.0.1'
+
+    defaultConfig {
+        minSdkVersion 8
+        targetSdkVersion 18
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:18.0.0'
+    compile 'org.twitter4j:twitter4j-stream:4.0.1'
+    compile 'org.twitter4j:twitter4j-core:4.0.1'
+    compile 'com.google.android.gms:play-services:3.1.+'
+    compile files('libs/Parse-1.3.5.jar')
+    compile files('libs/disklrucache-2.0.2.jar')
+    compile project(':Scringo')
+    compile 'com.android.support:support-v4:+'
+    compile files('AdBuddiz-2.3.1.jar')
+}
+android {
+    signingConfigs {
+
+        release {
+            storeFile file("keystore.jks")
+            storePassword "#Jigar555"
+            keyAlias "key1"
+            keyPassword "#Jigar555"
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+    }
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Svnit | Events</string>
+    <string name="app_name_short">Svnit Events</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_section1">People</string>
+    <string name="title_section2">Schedule</string>
+    <string name="title_section3">Stream</string>
+    <string name="headshot_content_desc">headshot</string>
+    <string name="share_string">Share</string>
+    <string name="tweeter_image_desc">Tweeter Image</string>
+
+    <string name="empty_session_detail">No session details found.</string>
+    <string name="session_speakers">Event In-Charge</string>
+    <string name="people">People</string>
+    <string name="session">Session</string>
+    <string name="consumer_key">dDeeo4aVoWfv2mpLk8Zc4g</string>
+    <string name="consumer_secret">WHMoDL87fKnplA0Fzhc2qS5M07U9NUFD8LDcjX4XS2g</string>
+    <string name="access_token">105782391-WZKeNl56mpmoWlbJa3wQXV7RIpWafSIINlxcKmNj</string>
+    <string name="access_token_secret">1m8NJ5rTl3vyrpOSmcsdb0LJjqvQFEETlrfz70P5Wsq0S</string>
+    <string name="scringo">Chat</string>
+    <string name="info">info</string>
+
+    <string name="publickey">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApJcu8ouanu56hleU90Why65oIrXu0R5A3rIccaf3G7J2iPz7Eo6/QCr6zhpPDU2t1PqXBBmvIh5G9Kd9knelEGlg9/XyzyWMLmdj6XUssfyrI2z8QoGmCm34VQDaBnL6P2xPPf8633KzOPkmh6f4jWB/RsJ1IWjekt/fVXzeJDNjG2qINy72CBuNd2Ex+gzGNiUIg0W22XYCDPDsMk+JHgAkbwGgYbz3Pe72/TG5AdG8y6nzjWyFDQn4LSd9qrnyHMOPJpeCItmut1PqIkEmkyuJDnVyfFwuFe/Faohxo/6OQSEmgIZidZg7jdrrylX7CE5Up7YV0GN8DikOTU37aQIDAQAB</string>
+    <string name="regurl"><a href="http://www.google.com">Google</a></string>
+    <string name="myurl"><a href="http://www.jigarbhatt.in">Personal Website</a></string>
+    <string name="myurl2"><a href="http://www.jaydeepramani.wordpress.com">Personal Website</a></string>
+    <string name="jigar_about">Batch of 2015\nDepartment of Computer Engineering\nNational Institute of Technology, Surat.</string>
+    <string name="jaydeep_about">Batch of 2015\nDepartment of Computer Engineering\nNational Institute of Technology, Surat.</string>
+</resources>

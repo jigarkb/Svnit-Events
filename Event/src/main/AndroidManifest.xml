@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bhatt.ramani.svnitevents"
+    android:versionCode="2"
+    android:versionName="1.1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <permission android:name="com.bhatt.ramani.svnitevents.permission.C2D_MESSAGE"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="com.bhatt.ramani.svnitevents.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <permission android:name="com.bhatt.ramani.svnitevents.permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.bhatt.ramani.svnitevents.permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <!-- Optional, but without them, you might get less ads and tracking could be less accurate -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/ConferenceActionBarTheme"
+        >
+        <activity
+            android:name="com.bhatt.ramani.svnitevents.MainActivity"
+            android:label="@string/app_name_short"
+            android:launchMode="singleTop"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="oauth" android:host="com.bhatt.ramani.svnitevents"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.bhatt.ramani.svnitevents.SessionDetailActivity"
+            android:label="@string/session"
+            android:parentActivityName="com.bhatt.ramani.svnitevents.MainActivity"
+            android:launchMode="singleTask">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bhatt.ramani.svnitevents.MainActivity" />
+        </activity>
+        <activity android:name=".PeopleDetailActivity"
+            android:label="@string/people"
+            android:parentActivityName="com.bhatt.ramani.svnitevents.MainActivity"
+            android:launchMode="singleTask">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bhatt.ramani.svnitevents.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.bhatt.ramani.svnitevents.AboutUs"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.bhatt.ramani.svnitevents.Form"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name="com.purplebrain.adbuddiz.sdk.AdBuddizActivity"
+            android:theme="@android:style/Theme.Translucent" />
+        <receiver
+            android:name="com.scringo.push.ScringoGCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter >
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="com.bhatt.ramani.svnitevents" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.scringo.push.ScringoGCMIntentService"/>
+
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="integer@/google_play_services_version" />
+
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyDUIAMDLpzAZIgxide0W3MS2lm4IJM9Efo"/>
+    </application>
+
+</manifest>

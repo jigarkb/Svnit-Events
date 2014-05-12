@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ConferenceActionBarTheme"
+        parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/ConferenceActionBar</item>
+        <item name="actionBarStyle">@style/ConferenceActionBar</item>
+    </style>
+
+    <style name="ConferenceActionBar"
+        parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/dark_pink</item>
+        <item name="android:icon">@drawable/running_man_white</item>
+        <item name="background">@color/dark_pink</item>
+        <item name="icon">@drawable/running_man_white</item>
+    </style>
+</resources>

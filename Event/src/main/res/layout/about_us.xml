@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/ivJigar"
+        android:src="@drawable/jigar" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/content_padding_normal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/jigar"
+                android:text="Jigar Bhatt"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextHeaderSub"
+                android:id="@+id/jigar_role"
+                android:text="App Developer"/>
+            <TextView
+                android:id="@+id/url_jig"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/myurl"
+                style="@style/TextHeaderSub"/>
+        </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+            android:weightSum="100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="80">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/content_padding_normal"
+                    style="@style/TextBody"
+                    android:id="@+id/jigar_abstract"
+                    android:text="@string/jigar_about"/>
+            </ScrollView>
+
+            <ImageButton
+                android:id="@+id/ibCall2"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="top"
+                android:cropToPadding="true"
+                android:contentDescription="Call"
+                android:src="@drawable/callbutton"
+                android:onClick="callme2"
+                android:background="@null"
+                android:layout_weight="20"
+                />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/ivJaydeep"
+            android:src="@drawable/jaydeep" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/content_padding_normal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/jaydeep"
+                android:text="Jaydeep Ramani"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextHeaderSub"
+                android:id="@+id/jaydeep_role"
+                android:text="App Developer"/>
+            <TextView
+                android:id="@+id/url_jay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/myurl2"
+                style="@style/TextHeaderSub"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="80">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/content_padding_normal"
+                style="@style/TextBody"
+                android:id="@+id/jaydeep_abstract"
+                android:text="@string/jaydeep_about"/>
+        </ScrollView>
+        <ImageButton
+            android:id="@+id/ibCall3"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="top"
+            android:cropToPadding="true"
+            android:contentDescription="Call"
+            android:src="@drawable/callbutton"
+            android:onClick="callme3"
+            android:background="@null"
+            android:layout_weight="20"
+            />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

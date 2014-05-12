@@ -1,0 +1,5 @@
+1. Open Android Studio.
+2. Select Import Project
+3. Select settings.gradle or build.gradle file from the root directory.
+
+This project is compiled with gradle version 1.10 and Android API level 18.

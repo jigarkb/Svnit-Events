@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:conf="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        conf:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_settings"
+        android:visible="false"/>
+    <item android:id="@+id/menu_item_share"
+        conf:showAsAction="always"
+        android:title="@string/share_string"
+        android:icon="@drawable/ic_action_edit"
+        />
+    <item android:id="@+id/scringobutton"
+        conf:showAsAction="always"
+        android:title="@string/scringo"
+        android:icon="@drawable/scringo_activation_icon_1"
+    />
+    <item android:id="@+id/about_us"
+        android:title="About Us"
+        conf:showAsAction="never"
+        android:icon="@drawable/aboutus"/>
+    <item android:id="@+id/form"
+        android:title="Tell us about an Event"
+        conf:showAsAction="never"/>
+</menu>
